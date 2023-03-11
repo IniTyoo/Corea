@@ -5,6 +5,7 @@
 
 ## Structs
 * [Vector2](#vector2)
+* [Clothes](#Clothes)
 * [NetAvatar](#netavatar)
 * [WorldObject](#worldobject)
 * [InventoryItem](#inventoryitem)
@@ -14,30 +15,30 @@
 * [ItemInfo](#iteminfo)
 
 ## Vector2
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
 | Number | `x` | Position x |
 | Number | `y` | Position y |
 
 ## Clothes
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
-| Number | `hat` | Player's hat item id |
-| Number | `shirt` | Player's shirt item id |
-| Number | `pants` | Player's pants item id |
-| Number | `feet` | Player's feet item id |
-| Number | `face` | Player's face item id |
-| Number | `hand` | Player's hand item id |
-| Number | `back` | Player's back item id |
-| Number | `hair` | Player's hair item id |
-| Number | `chest` | Player's chest item id |
-| Number | `artifact` | Player's artifact item id |
+| Number | `hat` | Player's hat item ID |
+| Number | `shirt` | Player's shirt item ID |
+| Number | `pants` | Player's pants item ID |
+| Number | `feet` | Player's feet item ID |
+| Number | `face` | Player's face item ID |
+| Number | `hand` | Player's hand item ID |
+| Number | `back` | Player's back item ID |
+| Number | `hair` | Player's hair item ID |
+| Number | `chest` | Player's chest item ID |
+| Number | `artifact` | Player's artifact item ID |
 
 ## NetAvatar
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
 | String | `name` | Player's name |
-| String | `country` | Player's flag id |
+| String | `country` | Player's flag ID |
 | [Vector2](#vector2) | `pos`  | Player's position |
 | [Vector2](#vector2) | `tile` | Player's tile position |
 | Number | `netid` | Player's netID |
@@ -45,31 +46,48 @@
 | Bool | `facing_left` | Is player facing left |
 | [Clothes](#Clothes) | `clothes` | Player's tile position |
 
+| Returns | Function | Description |
+|:-----|:----:|:-----------|
+| Null | Trade() | Send trade packet |
+| Null | Kick() | Send kick packet |
+| Null | Pull() | Send pull packet |
+| Null | Ban() | Send ban packet |
+
 ## WorldObject
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
 | Number | `id` | Object's item ID |
 | Number | `oid` | Object's index |
 | [Vector2](#vector2) | `pos` | Object's position |
-| Number | `count` | Object's item count |
+| Number | `amount` | Object's item amount |
 | Number | `flags` | Object's flags |
  
 ## InventoryItem
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
 | Number | `id` | Item's ID |
-| Number | `count` | Item count |
+| Number | `amount` | Item amount |
+| Bool | `wearing` | Is item wearing |
+
+## Inventory
+| Type | Name | Description |
+|:-----|:----:|:-----------|
+| Number | `size` | Inventory size |
+| Number | `space` | Inventory free space |
+| Table [InventoryItem](#InventoryItem) | `items` | Inventory items |
 
 ## Tile
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
 | Number | `fg` | Foreground block's ID |
 | Number | `bg` | Background block's ID |
 | [Vector2](#vector2) | `pos` |Tile's position |
 | Number | `flags` | Tile's flags |
+| Bool | `ready` | Is ready to harvest tree |
+| Bool | `solid` | Is can pass the tile |
 
 ## GamePacket
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
 | Number | `type` | Packet type |
 | Number | ` objtype` |  |
@@ -89,7 +107,7 @@
 | Number | `int_y` |  |
 
 ## VariantList
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
 | Number | `netid` | NetID |
 | Number | `delay` | Delay |
@@ -101,7 +119,7 @@
 | Any | `[5]` | Param 5 |
 
 ## ItemInfo
-| Type | Name | Description|
+| Type | Name | Description |
 |:-----|:----:|:-----------|
 | String | `name` | Item name |
 | Number | `id` | Item ID |
