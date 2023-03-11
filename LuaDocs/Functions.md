@@ -2,9 +2,9 @@
 
 # Functions
 * [Basic Functions](#Basic-Functions)
-* [ENetClient Functions (Bot)](#ENetClient-Functions)
+* [ENetClient Functions](#ENetClient-Functions) (Bot)
 * [World Functions](#World-Functions)
-* [NetAvatar Functions (Player)](#NetAvatar-Functions)
+* [NetAvatar Functions](#NetAvatar-Functions) (Player)
 
 ## Basic Functions
 * [Sleep](#Sleep)
