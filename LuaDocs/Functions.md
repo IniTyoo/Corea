@@ -126,6 +126,16 @@ Example:
 bot:Say("I have %d gems", bot.gems)
 ```
 
+## GetPing
+`ENetClient:GetPing()`
+
+Returns bot's ping (ms)
+
+## Move
+`ENetClient:Move(int direction)`
+
+Move the bot.
+
 ## World Functions
 * GetObjects
 * GetTiles
