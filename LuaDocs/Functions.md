@@ -10,6 +10,16 @@
 * [GetBot](#GetBot)
 
 ### GetBots
+`GetBots()`
+
+Returns table of [ENetClient](Structs.md#ENetClient) struct, [ENetClient Functions (Bot)](#ENetClient-Functions)
+
+Example:
+```lua
+-- Get the number of bots
+local bots = GetBots()
+print(#bots)
+```
 
 ### GetSelectedBots
 
