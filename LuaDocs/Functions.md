@@ -91,29 +91,29 @@ Removes a bot with that name from the bot list
 
 ## ENetClient Functions
 * [Say](#Say)
-* GetPing
-* Move
-* Enter
-* FindPath
-* Warp
-* Collect
-* Punch
-* Place
-* Wrench
-* Use
-* Wear
-* SendPacket
-* SendPacktRaw
-* Connect
-* Disconnect
-* Drop
-* Trash
-* AddCallback
-* RemoveCallback
-* RemoveCallbacks
-* GetWorld
-* GetInventory
-* Collect
+* [GetPing](#GetPing)
+* [Move](#Move)
+* [Enter](#Enter)
+* [FindPath](#FindPath)
+* [Warp](#Warp)
+* [Collect](#Collect)
+* [Punch](#Punch)
+* [Place](#Place)
+* [Wrench](#Wrench)
+* [Use](#Use)
+* [Wear](#Wear)
+* [SendPacket](#SendPacket)
+* [SendPacktRaw](#SendPacktRaw)
+* [Connect](#Connect)
+* [Disconnect](#Disconnect)
+* [Drop](#Drop)
+* [Trash](#Trash)
+* [AddCallback](#AddCallback)
+* [RemoveCallback](#RemoveCallback)
+* [RemoveCallbacks](#RemoveCallbacks)
+* [GetWorld](#GetWorld)
+* [GetInventory](#GetInventory)
+* [Collect](#Collect)
 
 ## Say
 `ENetClient:Say(string pattern [, ...])`
@@ -144,6 +144,23 @@ bot:Move(LEFT, LEFT, RIGHT, UP)
 -- Don't make too many moves at once
 Sleep(1000)
 bot:Move(DOWN)
+```
+
+## Enter
+`ENetClient:Enter()`
+
+Enter the door at the bot's tile position.
+
+## FindPath
+`ENetClient:FindPath(int tile_x, int tile_y [, int delay_ms])`
+
+Moves the bot to that tile position regardless of distance.
+Returns true if the move was successful, false if it failed.
+
+Example:
+```lua
+local success = bot:FindPath(23, 10)
+print(success and "success!" or "failed!")
 ```
 
 ## World Functions
