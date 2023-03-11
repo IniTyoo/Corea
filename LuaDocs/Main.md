@@ -1,6 +1,8 @@
 # Corea Documentation
 
 ## [Defines](Defines.md) (Global variables)
+* [Direections](Defines.md#Directions)
+* [CallbackTypes](Defines.md#CallbackTypes)
 
 ## [Structs](Structs.md)
 * [Vector2](Structs.md#vector2)
