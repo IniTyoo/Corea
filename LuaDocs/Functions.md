@@ -9,7 +9,7 @@
 * [GetSelectedBots](#GetSelectedBots)
 * [GetBot](#GetBot)
 
-### GetBots
+## GetBots
 `GetBots()`
 
 Of all bots, return the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions) as a table
@@ -21,7 +21,7 @@ local bots = GetBots()
 print(#bots)
 ```
 
-### GetSelectedBots
+## GetSelectedBots
 `GetSelectedBots()`
 
 Returns the [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions) of the selected bot among all bots
@@ -33,7 +33,7 @@ local bots = GetBots()
 print(#bots)
 ```
 
-### GetBot
+## GetBot
 `GetBot(string name)`
 
 Returns the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions)
