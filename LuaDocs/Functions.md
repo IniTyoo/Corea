@@ -12,7 +12,7 @@
 ### GetBots
 `GetBots()`
 
-Returns table of [ENetClient](Structs.md#ENetClient) struct, [ENetClient Functions (Bot)](#ENetClient-Functions)
+Returns table of [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions)
 
 Example:
 ```lua
