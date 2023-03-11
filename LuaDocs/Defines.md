@@ -5,21 +5,21 @@
 * [CallbackTypes](#CallbackTypes)
 
 ## Directions
-| Variable | Value |
-|:---------|:-----:|
-|`UP`|0|
-|`DOWN`|1|
-|`LEFT`|2|
-|`RIGHT`|3|
+| Type | Variable | Value |
+|;-----|:---------|:-----:|
+|Number|`UP`|0|
+|Number|`DOWN`|1|
+|Number|`LEFT`|2|
+|Number|`RIGHT`|3|
 
 * [ENetClient:Move](Functions.md#Move)(`int direction [, ...]`)
 
 ## CallbackTypes
-| Variable | Value |
-|:---------|:-----:|
-|`VARIANTLIST`||
-|`GAMEMESSAGE`||
-|`GAMEPACKET`||
-|`TRACKPACKET`||
+| Type | Variable | Value |
+|;-----|:---------|:-----:|
+|Number|`VARIANTLIST`||
+|Number|`GAMEMESSAGE`||
+|Number|`GAMEPACKET`||
+|Number|`TRACKPACKET`||
 
 * [ENetClient:AddCallback](Functions.md#AddCallback)(string callback_name, `int callback_type`, void* function)
