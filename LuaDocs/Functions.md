@@ -15,7 +15,7 @@
 ## Sleep
 `Sleep(int millisecond)`
 
-Delay parameter 1 value milliseconds in the current thread.
+Delay parameter 1 value milliseconds in the current thread. (1000ms = 1s)
 
 Example:
 ```lua
