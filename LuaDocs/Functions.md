@@ -92,27 +92,27 @@ Removes a bot with that name from the bot list
 ## ENetClient Functions
 * [Say](#Say)(string pattern [, ...])
 * [GetPing](#GetPing)()
-* [Move](#Move)(int direction)
+* [Move](#Move)(int direction [, ...])
 * [Enter](#Enter)()
-* [FindPath(int tile_x, int tile_y [, int delay])](#FindPath)
+* [FindPath](#FindPath)(int tile_x, int tile_y [, int delay])
 * [Warp](#Warp)(string world_name [, string door_id])
-* [Collect](#Collect)
-* [Punch](#Punch)
-* [Place](#Place)
-* [Wrench](#Wrench)
-* [Use](#Use)
-* [Wear](#Wear)
-* [SendPacket](#SendPacket)
-* [SendPacktRaw](#SendPacktRaw)
-* [Connect](#Connect)
-* [Disconnect](#Disconnect)
-* [Drop](#Drop)
-* [Trash](#Trash)
-* [AddCallback](#AddCallback)
-* [RemoveCallback](#RemoveCallback)
-* [RemoveCallbacks](#RemoveCallbacks)
-* [GetWorld](#GetWorld)
-* [GetInventory](#GetInventory)
+* [Collect](#Collect)(int radius)
+* [Punch](#Punch)(int tile_x, int tile_y [, bool animation])
+* [Place](#Place)(int tile_x, int tile_y, int item_id [, bool animation])
+* [Wrench](#Wrench)(int tile_x, int tile_y)
+* [Use](#Use)()
+* [Wear](#Wear)(int item_id)
+* [SendPacket](#SendPacket)(int type, string packet)
+* [SendPacktRaw](#SendPacktRaw)(GamePacket packet)
+* [Connect](#Connect)()
+* [Disconnect](#Disconnect)()
+* [Drop](#Drop)(int item_id [, amount])
+* [Trash](#Trash)(int item_id [, amount])
+* [AddCallback](#AddCallback)(string callback_name, int callback_type, void* function)
+* [RemoveCallback](#RemoveCallback)(string callback_name)
+* [RemoveCallbacks](#RemoveCallbacks)()
+* [GetWorld](#GetWorld)()
+* [GetInventory](#GetInventory)()
 
 ## Say
 `ENetClient:Say(string pattern [, ...])`
@@ -187,7 +187,7 @@ print(success and "success!" or "failed!")
 `ENetClient:SendPacket(int type, string packet)`
 
 ## SendPacketRaw
-`ENetClient:SendPacketRaw(table packet)`
+`ENetClient:SendPacketRaw(GamePacket packet)`
 
 ## Connect
 `ENetClient:Connect()`
@@ -197,6 +197,9 @@ print(success and "success!" or "failed!")
 
 ## Drop
 `ENetClient:Drop(int item_id [, amount])`
+
+## Trash
+`ENetClient:Trash(int item_id [, amount])`
 
 ## AddCallback
 `ENetClient:AddCallback(string callback_name, int callback_type, void* function)`
