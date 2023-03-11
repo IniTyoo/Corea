@@ -82,3 +82,17 @@ bot:Disconnect()
 Removes a bot with that name from the bot list
 
 ## ENetClient Functions
+* [Say](#Say)
+
+
+## Say
+`ENetClient:Say(string pattern [, ...])`
+
+The bot sends a packet to send a chat.
+
+Example:
+```lua
+-- Check the bot's gem amount
+local bot = GetBot("coreabot")
+bot:Say("I have %d gems", bot.gems)
+```
