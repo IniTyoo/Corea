@@ -52,6 +52,26 @@
 | Number | `chest` | Player's chest item ID |
 | Number | `artifact` | Player's artifact item ID |
 
+## ENetClient
+| Type | Name | Description |
+|:-----|:----:|:-----------|
+| String | `name` | Bot's name |
+| String | `country` | Bot's flag ID |
+| String | `world` | Bot's world name |
+| [Vector2](#vector2) | `pos`  | Bot's position |
+| [Vector2](#vector2) | `tile` | Bot's tile position |
+| Number | `netid` | Bot's netID |
+| Number | `userid` | Bot's userID |
+| Number | `gems` | Bot's gem amount |
+| Number | `level` | Bot's level |
+| String | `status` | Bot's status |
+| Number | `state` | Bot's state ||
+| String | `captcha` | Bot's captcha status |
+| String | `world` | Bot's world name |
+| Bool | `facing_left` | Is bot facing left |
+| [Clothes](#Clothes) | `clothes` | Bot's clothes |
+
+
 ## NetAvatar
 | Type | Name | Description |
 |:-----|:----:|:-----------|
