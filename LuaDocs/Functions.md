@@ -12,7 +12,7 @@
 ## GetBots
 `GetBots()`
 
-Of all bots, return the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions) as a table
+Of all bots, return the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions) as a table.
 
 Example:
 ```lua
@@ -24,7 +24,7 @@ print(#bots)
 ## GetSelectedBots
 `GetSelectedBots()`
 
-Returns the [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions) of the selected bot among all bots
+Returns the [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions) of the selected bot among all bots.
 
 Example:
 ```lua
@@ -36,7 +36,7 @@ print(#bots)
 ## GetBot
 `GetBot(string name)`
 
-Returns the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions)\
+Returns the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions).\
 The name in parameter 1 is not case sensitive and returns NULL if the bot is not found.
 
 Example:
