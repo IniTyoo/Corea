@@ -16,7 +16,7 @@
 * [ItemInfo](Structs.md#iteminfo)
 
 ## [Functions](Functions.md)
-* [Global Functions](#Global-Functions)
-* [ENetClient Functions](#ENetClient-Functions) (Bot)
-* [World Functions](#World-Functions)
-* [NetAvatar Functions](#NetAvatar-Functions) (Player)
+* [Global Functions](Functions.md#Global-Functions)
+* [ENetClient Functions](Functions.md#ENetClient-Functions) (Bot)
+* [World Functions](Functions.md#World-Functions)
+* [NetAvatar Functions](Functions.md#NetAvatar-Functions) (Player)
