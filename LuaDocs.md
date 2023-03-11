@@ -8,8 +8,8 @@
 * [Clothes](#Clothes)
 * [NetAvatar](#netavatar)
 * [WorldObject](#worldobject)
+* [WorldTile](#WorldTile)
 * [InventoryItem](#inventoryitem)
-* [Tile](#tile)
 * [GamePacket](#gamepacket)
 * [VariantList](#variantlist)
 * [ItemInfo](#iteminfo)
@@ -19,6 +19,24 @@
 |:-----|:----:|:-----------|
 | Number | `x` | Position x |
 | Number | `y` | Position y |
+
+## World
+| Type | Name | Description |
+|:-----|:----:|:-----------|
+| String | `name` | World name |
+| Number | `width` | World width |
+| Number | `height` | World height |
+| Number | `geiger` | World gegier |
+| Bool | `locked` | Is world locked |
+| Number | `ownerid` | World owner's userID |
+
+| Returns | Function | Description |
+|:-----|:----:|:-----------|
+| Table [NetAvatar](#NetAvatar) | `GetPlayers()` | Get all players |
+| Table WorldGhost | `GetGhost()` | Get all ghosts |
+| Table [WorldTile](#WorldTile) | `GetTiles()` | Get all tiles |
+| [WorldTile](#WorldTile) | `GetTile(int tile_x, int tile_y)` | Get tile |
+| Table [WorldObject](#WorldObject) | `GetObjects()` | Get all floating items (objects) |
 
 ## Clothes
 | Type | Name | Description |
@@ -48,10 +66,10 @@
 
 | Returns | Function | Description |
 |:-----|:----:|:-----------|
-| Null | Trade() | Send trade packet |
-| Null | Kick() | Send kick packet |
-| Null | Pull() | Send pull packet |
-| Null | Ban() | Send ban packet |
+| Null | `Trade()` | Send trade packet |
+| Null | `Kick()` | Send kick packet |
+| Null | `Pull()` | Send pull packet |
+| Null | `Ban()` | Send ban packet |
 
 ## WorldObject
 | Type | Name | Description |
@@ -61,6 +79,16 @@
 | [Vector2](#vector2) | `pos` | Object's position |
 | Number | `amount` | Object's item amount |
 | Number | `flags` | Object's flags |
+
+## WorldTile
+| Type | Name | Description |
+|:-----|:----:|:-----------|
+| Number | `fg` | Foreground block's ID |
+| Number | `bg` | Background block's ID |
+| [Vector2](#vector2) | `pos` |Tile's position |
+| Number | `flags` | Tile's flags |
+| Bool | `ready` | Is ready to harvest tree |
+| Bool | `solid` | Is can pass the tile |
  
 ## InventoryItem
 | Type | Name | Description |
@@ -76,15 +104,9 @@
 | Number | `space` | Inventory free space |
 | Table [InventoryItem](#InventoryItem) | `items` | Inventory items |
 
-## Tile
-| Type | Name | Description |
+| Returns | Function | Description |
 |:-----|:----:|:-----------|
-| Number | `fg` | Foreground block's ID |
-| Number | `bg` | Background block's ID |
-| [Vector2](#vector2) | `pos` |Tile's position |
-| Number | `flags` | Tile's flags |
-| Bool | `ready` | Is ready to harvest tree |
-| Bool | `solid` | Is can pass the tile |
+| Number | `GetItemAmount(int item_id)` | Get item amount from inventory items |
 
 ## GamePacket
 | Type | Name | Description |
@@ -128,21 +150,18 @@
 | Number | `breakhits` | Item breakhits |
 
 ## Functions
-* [sendPacket](#sendpacket)
-* [sendPacketRaw](#sendpacketraw)
-* [sendVarlist](#sendvarlist)
-* [log](#log)
-* [findPath](#findpath)
-* [getLocal](#getlocal)
-* [getInventory](#getinventory)
-* [getPlayers](#getplayers)
-* [getObjects](#getobjects)
-* [getTile](#gettile)
-* [getTiles](#gettiles)
-* [getItemInfo](#getiteminfo)
-* [isSolid](#issolid)
-* [drawLine](#drawline)
-* [drawText](#drawtext)
-* [drawRect](#drawrect)
-* [worldToScreen](#worldtoscreen)
-* [patchBytes](#patchbytes)
+* GetBots
+* GetSelectedBots
+* GetBot
+* Sleep
+* AddBot
+* RemoveBot
+* RunFile
+* StopFile
+* HttpGet
+* RequireFromUrl
+* GetItemInfo
+* AddCallback
+* RemoveCallback
+* RemoveCallbacks
+* RunThread
