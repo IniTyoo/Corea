@@ -111,6 +111,7 @@ Removes a bot with that name from the bot list
 * [Disconnect](#Disconnect)()
 * [Drop](#Drop)(int item_id [, amount])
 * [Trash](#Trash)(int item_id [, amount])
+* [FindItem](#FindItem)(int item_id)
 * [AddCallback](#AddCallback)(string callback_name, int callback_type, void* function)
 * [RemoveCallback](#RemoveCallback)(string callback_name)
 * [RemoveCallbacks](#RemoveCallbacks)()
@@ -205,6 +206,20 @@ print(success and "success!" or "failed!")
 
 ## Trash
 `ENetClient:Trash(int item_id [, amount])`
+
+## FindItem
+`ENetClient:FindItem(int item_id)`
+
+Finds an item in the bot's inventory by ID and returns the [InventoryItem](Structs.md#InventoryItem) struct of that item.\
+Returns `NULL` if not found
+
+Example:
+```lua
+local item = bot:FindItem(98)
+if item then
+   bot:Say("I have %d %s.", item.amount, GetItemInfo(item.id).name)
+end
+```
 
 ## AddCallback
 `ENetClient:AddCallback(string callback_name, int callback_type, void* function)`
