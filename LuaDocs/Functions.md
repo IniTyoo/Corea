@@ -4,6 +4,7 @@
 * [Basic Functions](#Basic-Functions)
 * [ENetClient Functions (Bot)](#ENetClient-Functions)
 * [World Functions](#World-Functions)
+* [NetAvatar Functions (Player)](#NetAvatar-Functions)
 
 ## Basic Functions
 * [Sleep](#Sleep)
@@ -133,3 +134,10 @@ bot:Say("I have %d gems", bot.gems)
 * GetPlayers
 * GetGhost
 * FindPlayer
+
+## NetAvatar Functions
+* Kick
+* Pull
+* Ban
+* Trade
+* SendMsg
