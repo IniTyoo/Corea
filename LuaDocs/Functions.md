@@ -37,7 +37,7 @@ print(#bots)
 `GetBot(string name)`
 
 Returns the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions).\
-The name in parameter 1 is not case sensitive and returns NULL if the bot is not found.
+The `name` in parameter 1 is not case sensitive and returns `NULL` if the bot is not found.
 
 Example:
 ```lua
@@ -45,5 +45,23 @@ Example:
 local bot = GetBot("seth")
 print(bot and "found" or "not found")
 ```
+
+## AddBot
+`AddBot(string name, string password [, string socks5])`
+
+Adds a bot to the list, then returns the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions).\
+`socks5` in parameter 3 is optional and can be added by typing `IP:PORT:USERNAME:PASSWORD`.
+
+Example:
+```lua
+-- Add a bot and then disconnect it
+local bot = AddBot("username", "password")
+bot:Disconnect()
+```
+
+## RemoveBot
+`RemoveBot(string name)`
+
+Removes a bot with that name from the bot list
 
 ## ENetClient Functions
