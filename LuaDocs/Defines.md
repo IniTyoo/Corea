@@ -6,7 +6,7 @@
 
 ## Directions
 | Type | Variable | Value |
-|;-----|:---------|:-----:|
+|:-----|:---------|:-----:|
 |Number|`UP`|0|
 |Number|`DOWN`|1|
 |Number|`LEFT`|2|
@@ -16,7 +16,7 @@
 
 ## CallbackTypes
 | Type | Variable | Value |
-|;-----|:---------|:-----:|
+|:-----|:---------|:-----:|
 |Number|`VARIANTLIST`||
 |Number|`GAMEMESSAGE`||
 |Number|`GAMEPACKET`||
