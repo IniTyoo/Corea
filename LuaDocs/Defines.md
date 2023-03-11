@@ -15,6 +15,7 @@
 ## CallbackTypes
 | Variable | Value |
 |:---------|:-----:|
-|`ON_VARLIST`||
-|`ON_PACKET`||
-|`ON_RAW_PACKET`||
+|`VARIANTLIST`||
+|`GAMEMESSAGE`||
+|`GAMEPACKET`||
+|`TRACKPACKET`||
