@@ -2,8 +2,10 @@
 
 # Structs
 * [Vector2](#vector2)
+* [World](#World)
 * [Clothes](#Clothes)
-* [NetAvatar](#netavatar)
+* [ENetClient](#ENetClient) (Bot)
+* [NetAvatar](#netavatar) (Player)
 * [WorldObject](#worldobject)
 * [WorldTile](#WorldTile)
 * [InventoryItem](#inventoryitem)
