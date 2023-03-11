@@ -1,7 +1,7 @@
 **←** [Back to main](Main.md)
 
 # Functions
-* [Main Functions](#Basic-Functions)
+* [Main Functions](#Main-Functions)
 * [ENetClient Functions](#ENetClient-Functions) (Bot)
 * [World Functions](#World-Functions)
 * [NetAvatar Functions](#NetAvatar-Functions) (Player)
