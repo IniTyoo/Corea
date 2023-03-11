@@ -1,4 +1,4 @@
 # Corea Documentation
-* [Structs](/structs.md)
-* [Functions](/functions.md)
+* [Structs](/Structs.md)
+* [Functions](/Functions.md)
 * [Callbacks](/callbacks.md)
