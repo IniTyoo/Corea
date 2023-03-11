@@ -1,5 +1,7 @@
 # Corea Documentation
 
+## [Defines](Defines.md) (Global variables)
+
 ## [Structs](Structs.md)
 * [Vector2](Structs.md#vector2)
 * [Clothes](Structs.md#Clothes)
