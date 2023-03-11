@@ -113,7 +113,6 @@ Removes a bot with that name from the bot list
 * [RemoveCallbacks](#RemoveCallbacks)
 * [GetWorld](#GetWorld)
 * [GetInventory](#GetInventory)
-* [Collect](#Collect)
 
 ## Say
 `ENetClient:Say(string pattern [, ...])`
@@ -154,7 +153,7 @@ Enter the door at the bot's tile position.
 ## FindPath
 `ENetClient:FindPath(int tile_x, int tile_y [, int delay_ms])`
 
-Moves the bot to that tile position regardless of distance.
+Moves the bot to that tile position regardless of distance.\
 Returns true if the move was successful, false if it failed.
 
 Example:
@@ -162,6 +161,51 @@ Example:
 local success = bot:FindPath(23, 10)
 print(success and "success!" or "failed!")
 ```
+
+## Warp
+`ENetClient:Warp(string world_name [, string door_id])`
+
+## Collect
+`ENetClient:Collect(int radius)`
+
+## Punch
+`ENetClient:Punch(int tile_x, int tile_y [, bool animation])`
+
+## Place
+`ENetClient:Place(int tile_x, int tile_y, int item_id [, bool animation])`
+
+## Wrench
+`ENetClient:Wrench(int tile_x, int tile_y)`
+
+## Use
+`ENetClient:Use()`
+
+## Wear
+`ENetClient:Wear(int item_id)`
+
+## SendPacket
+`ENetClient:SendPacket(int type, string packet)`
+
+## SendPacketRaw
+`ENetClient:SendPacketRaw(table packet)`
+
+## Connect
+`ENetClient:Connect()`
+
+## Disconnect
+`ENetClient:Disconnect()`
+
+## Drop
+`ENetClient:Drop(int item_id [, amount])`
+
+## AddCallback
+`ENetClient:AddCallback(string callback_name, int callback_type, void* function)`
+
+## RemoveCallback
+`ENetClient:RemoveCallback(string callback_name)`
+
+## RemoveCallbacks
+`ENetClient:RemoveCallbacks()`
 
 ## World Functions
 * GetObjects
