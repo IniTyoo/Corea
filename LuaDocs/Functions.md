@@ -11,6 +11,12 @@
 * [GetBot](#GetBot)
 * [AddBot](#AddBot)
 * [RemoveBot](#RemoveBot)
+* RunFile
+* StopFile
+* RunThread
+* GetItemInfo
+* HttpGet
+* RequireFromUrl
 
 ## Sleep
 `Sleep(int millisecond)`
