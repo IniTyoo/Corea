@@ -65,7 +65,7 @@
 | Number | `level` | Bot's level |
 | String | `status` | Bot's status |
 | Number | `state` | Bot's state ||
-| String | `captcha` | Bot's captcha status |
+| Bool | `captcha` | Bot's captcha state |
 | String | `world` | Bot's world name |
 | Bool | `facing_left` | Is bot facing left |
 | [Clothes](#Clothes) | `clothes` | Bot's clothes |
