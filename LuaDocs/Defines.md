@@ -11,6 +11,7 @@
 |`DOWN`|1|
 |`LEFT`|2|
 |`RIGHT`|3|
+* [ENetClient:Move](Functions.md#Move)(int direction [, ...])
 
 ## CallbackTypes
 | Variable | Value |
