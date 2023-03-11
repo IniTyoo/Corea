@@ -90,12 +90,12 @@ bot:Disconnect()
 Removes a bot with that name from the bot list
 
 ## ENetClient Functions
-* [Say(string pattern [, ...])](#Say)
-* [GetPing()](#GetPing)
-* [Move(int direction)](#Move)
-* [Enter()](#Enter)
+* [Say](#Say)(string pattern [, ...])
+* [GetPing](#GetPing)()
+* [Move](#Move)(int direction)
+* [Enter](#Enter)()
 * [FindPath(int tile_x, int tile_y [, int delay])](#FindPath)
-* [Warp(string world_name [, string door_id]](#Warp)
+* [Warp](#Warp)(string world_name [, string door_id])
 * [Collect](#Collect)
 * [Punch](#Punch)
 * [Place](#Place)
