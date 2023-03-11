@@ -36,7 +36,7 @@ print(#bots)
 ## GetBot
 `GetBot(string name)`
 
-Returns the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions)
+Returns the bot's [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Functions](#ENetClient-Functions)\
 The name in parameter 1 is not case sensitive and returns NULL if the bot is not found.
 
 Example:
