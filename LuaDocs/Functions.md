@@ -123,7 +123,6 @@ The bot sends a packet to send a chat.
 Example:
 ```lua
 -- Check the bot's gem amount
-local bot = GetBot("coreabot")
 bot:Say("I have %d gems", bot.gems)
 ```
 
