@@ -5,4 +5,5 @@
 
 ## Directions
 | Variable | Value |
+|:---------|:-----:|
 |UP|0|
