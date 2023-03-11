@@ -132,10 +132,19 @@ bot:Say("I have %d gems", bot.gems)
 Returns bot's ping (ms)
 
 ## Move
-`ENetClient:Move(int direction)`
+`ENetClient:Move(int direction [, ...])`
 
-Move the bot.\
-For the value of parameter 1, refer to [Directions](Defines.md#Directions)
+Moves the bot.\
+For the value of parameters, refer to [Directions](Defines.md#Directions)
+
+Example:
+```lua
+-- Moves the bot left twice, right once, up once, down once
+bot:Move(LEFT, LEFT, RIGHT, UP)
+-- Don't make too many moves at once
+Sleep(1000)
+bot:Move(DOWN)
+```
 
 ## World Functions
 * GetObjects
