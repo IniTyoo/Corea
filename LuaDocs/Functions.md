@@ -1,12 +1,12 @@
 **←** [Back to main](Main.md)
 
 # Functions
-* [Basic Functions](#Basic-Functions)
+* [Main Functions](#Basic-Functions)
 * [ENetClient Functions](#ENetClient-Functions) (Bot)
 * [World Functions](#World-Functions)
 * [NetAvatar Functions](#NetAvatar-Functions) (Player)
 
-## Basic Functions
+## Main Functions
 * [Sleep](#Sleep)
 * [GetBots](#GetBots)
 * [GetSelectedBots](#GetSelectedBots)
