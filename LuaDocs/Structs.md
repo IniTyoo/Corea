@@ -1,1 +1,1 @@
-[Back to main](Main.md)
+← [Back to main](Main.md)
