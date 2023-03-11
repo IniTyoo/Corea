@@ -11,7 +11,8 @@
 |`DOWN`|1|
 |`LEFT`|2|
 |`RIGHT`|3|
-* [ENetClient:Move](Functions.md#Move)(int direction [, ...])
+
+* [ENetClient:Move](Functions.md#Move)(`int direction [, ...]`)
 
 ## CallbackTypes
 | Variable | Value |
@@ -20,3 +21,5 @@
 |`GAMEMESSAGE`||
 |`GAMEPACKET`||
 |`TRACKPACKET`||
+
+* [ENetClient:AddCallback](Functions.md#AddCallback)(string callback_name, `int callback_type`, void* function)
