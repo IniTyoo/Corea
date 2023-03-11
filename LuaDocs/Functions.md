@@ -20,7 +20,6 @@
 * HttpGet(string url)
 * RequireFromUrl(string url)
 * GetTileDistance(int x1, int y1, int x2, int y2)
-* PasswordReply(string password [, int tile_x, int tile_y])
 
 ## Sleep
 `Sleep(int millisecond)`
@@ -115,6 +114,7 @@ Removes a bot with that name from the bot list
 * [RemoveCallbacks](#RemoveCallbacks)()
 * [GetWorld](#GetWorld)()
 * [GetInventory](#GetInventory)()
+* PasswordReply(string password [, int tile_x, int tile_y])
 
 ## Say
 `ENetClient:Say(string pattern [, ...])`
