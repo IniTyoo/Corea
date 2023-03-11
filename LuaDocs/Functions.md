@@ -3,6 +3,7 @@
 # Functions
 * [Basic Functions](#Basic-Functions)
 * [ENetClient Functions (Bot)](#ENetClient-Functions)
+* [World Functions](#World-Functions)
 
 ## Basic Functions
 * [Sleep](#Sleep)
@@ -89,7 +90,29 @@ Removes a bot with that name from the bot list
 
 ## ENetClient Functions
 * [Say](#Say)
-
+* GetPing
+* Move
+* Enter
+* FindPath
+* Warp
+* Collect
+* Punch
+* Place
+* Wrench
+* Use
+* Wear
+* SendPacket
+* SendPacktRaw
+* Connect
+* Disconnect
+* Drop
+* Trash
+* AddCallback
+* RemoveCallback
+* RemoveCallbacks
+* GetWorld
+* GetInventory
+* Collect
 
 ## Say
 `ENetClient:Say(string pattern [, ...])`
@@ -102,3 +125,11 @@ Example:
 local bot = GetBot("coreabot")
 bot:Say("I have %d gems", bot.gems)
 ```
+
+## World Functions
+* GetObjects
+* GetTiles
+* GetTile
+* GetPlayers
+* GetGhost
+* FindPlayer
