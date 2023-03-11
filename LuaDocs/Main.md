@@ -1,6 +1,6 @@
 # Corea Documentation
 
-## [Defines](Defines.md) <sub><sup>(Global variables)</sub></sup>
+## [Defines](Defines.md) <sub>(Global variables)</sub>
 * [Direections](Defines.md#Directions)
 * [CallbackTypes](Defines.md#CallbackTypes)
 
