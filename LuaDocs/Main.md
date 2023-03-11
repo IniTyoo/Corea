@@ -1,6 +1,6 @@
 # Corea Documentation
 
-* [Structs](Structs.md)
+## [Structs](Structs.md)
 * [Vector2](Structs.md#vector2)
 * [Clothes](Structs.md#Clothes)
 * [NetAvatar](Structs.md#netavatar)
@@ -11,4 +11,4 @@
 * [VariantList](#variantlist)
 * [ItemInfo](#iteminfo)
 
-* [Functions](Functions.md)
+## [Functions](Functions.md)
