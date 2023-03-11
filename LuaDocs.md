@@ -1,0 +1,1 @@
+# Corea Lua Script Documentation
