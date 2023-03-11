@@ -1,24 +1,26 @@
 **←** [Back to main](Main.md)
 
 # Functions
-* [Main Functions](#Main-Functions)
+* [Global Functions](#Global-Functions)
 * [ENetClient Functions](#ENetClient-Functions) (Bot)
 * [World Functions](#World-Functions)
 * [NetAvatar Functions](#NetAvatar-Functions) (Player)
 
-## Main Functions
-* [Sleep](#Sleep)
-* [GetBots](#GetBots)
-* [GetSelectedBots](#GetSelectedBots)
-* [GetBot](#GetBot)
-* [AddBot](#AddBot)
-* [RemoveBot](#RemoveBot)
-* RunFile
-* StopFile
-* RunThread
-* GetItemInfo
-* HttpGet
-* RequireFromUrl
+## Global Functions
+* [Sleep](#Sleep)(int millisecond)
+* [GetBots](#GetBots)()
+* [GetSelectedBots](#GetSelectedBots)()
+* [GetBot](#GetBot)(string name)
+* [AddBot](#AddBot)(string name, string password [, string socks5])
+* [RemoveBot](#RemoveBot)(string name)
+* RunFile(string filename)
+* StopFile(string filename)
+* RunThread(string thread_name, void* function [, ...])
+* GetItemInfo(int item_id)
+* HttpGet(string url)
+* RequireFromUrl(string url)
+* GetTileDistance(int x1, int y1, int x2, int y2)
+* PasswordReply(string password [, int tile_x, int tile_y])
 
 ## Sleep
 `Sleep(int millisecond)`
