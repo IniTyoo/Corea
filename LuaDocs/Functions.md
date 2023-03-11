@@ -5,9 +5,26 @@
 * [ENetClient Functions (Bot)](#ENetClient-Functions)
 
 ## Basic Functions
+* [Sleep](#Sleep)
 * [GetBots](#GetBots)
 * [GetSelectedBots](#GetSelectedBots)
 * [GetBot](#GetBot)
+* [AddBot](#AddBot)
+* [RemoveBot](#RemoveBot)
+
+## Sleep
+`Sleep(int millisecond)`
+
+Delay parameter 1 value milliseconds in the current thread.
+
+Example:
+```lua
+-- Move the bot to the left twice. but add a 1 second delay in the middle
+local bot = GetSelectedBots()[1]
+bot:Move(LEFT)
+Sleep(1000)
+bot:Move(LEFT)
+```
 
 ## GetBots
 `GetBots()`
