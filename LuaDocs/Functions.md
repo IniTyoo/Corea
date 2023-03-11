@@ -57,7 +57,7 @@ Returns the [ENetClient Structs](Structs.md#ENetClient) and [ENetClient Function
 Example:
 ```lua
 -- Print the number of selected bots
-local bots = GetBots()
+local bots = GetSelectedBots()
 print(#bots)
 ```
 
