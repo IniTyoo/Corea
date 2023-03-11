@@ -93,6 +93,8 @@ bot:Disconnect()
 Removes a bot with that name from the bot list
 
 ## ENetClient Functions
+* [Connect](#Connect)()
+* [Disconnect](#Disconnect)()
 * [Say](#Say)(string pattern [, ...])
 * [GetPing](#GetPing)()
 * [Move](#Move)(int direction [, ...])
@@ -107,8 +109,6 @@ Removes a bot with that name from the bot list
 * [Wear](#Wear)(int item_id)
 * [SendPacket](#SendPacket)(int type, string packet)
 * [SendPacktRaw](#SendPacktRaw)(GamePacket packet)
-* [Connect](#Connect)()
-* [Disconnect](#Disconnect)()
 * [Drop](#Drop)(int item_id [, amount])
 * [Trash](#Trash)(int item_id [, amount])
 * [FindItem](#FindItem)(int item_id)
@@ -119,6 +119,16 @@ Removes a bot with that name from the bot list
 * [GetInventory](#GetInventory)()
 * PasswordReply(string password [, int tile_x, int tile_y])
 * Respawn()
+
+## Connect
+`ENetClient:Connect()`
+
+Connect the bot. (Reconnect if already connected)
+
+## Disconnect
+`ENetClient:Disconnect()`
+
+Disconnect the bot
 
 ## Say
 `ENetClient:Say(string pattern [, ...])`
@@ -171,41 +181,57 @@ print(success and "success!" or "failed!")
 ## Warp
 `ENetClient:Warp(string world_name [, string door_id])`
 
+Make the bot warp to the world.
+
 ## Collect
-`ENetClient:Collect(int radius)`
+`ENetClient:Collect(int radius [, table whitelist_item_ids])`
+
+Collect items within range.
 
 ## Punch
 `ENetClient:Punch(int tile_x, int tile_y [, bool animation])`
 
+The bot will hit that tile.
+
 ## Place
 `ENetClient:Place(int tile_x, int tile_y, int item_id [, bool animation])`
+
+The bot will place an item on that tile.
 
 ## Wrench
 `ENetClient:Wrench(int tile_x, int tile_y)`
 
+The bot will wrench that tile. You can check the dialog using the [AddCallback](#AddCallback) function.
+
 ## Use
 `ENetClient:Use()`
+
+Use the block in the bot's current tile.
 
 ## Wear
 `ENetClient:Wear(int item_id)`
 
+The bot will wear the item.
+
 ## SendPacket
 `ENetClient:SendPacket(int type, string packet)`
+
+Sends text packet with selected type to server.
 
 ## SendPacketRaw
 `ENetClient:SendPacketRaw(GamePacket packet)`
 
-## Connect
-`ENetClient:Connect()`
-
-## Disconnect
-`ENetClient:Disconnect()`
+Sends GamePacket to server.
 
 ## Drop
 `ENetClient:Drop(int item_id [, amount])`
 
+Make the bot drop an item.
+
 ## Trash
 `ENetClient:Trash(int item_id [, amount])`
+
+Make the bot trash the item.
 
 ## FindItem
 `ENetClient:FindItem(int item_id)`
