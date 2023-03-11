@@ -134,7 +134,8 @@ Returns bot's ping (ms)
 ## Move
 `ENetClient:Move(int direction)`
 
-Move the bot.
+Move the bot.\
+For the value of parameter 1, refer to [Directions](Defines.md#Directions)
 
 ## World Functions
 * GetObjects
