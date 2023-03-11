@@ -2,8 +2,17 @@
 
 # Functions
 * [Basic Functions](#Basic-Functions)
-* [Bot Functions](#Bot-Functions)
+* [ENetClient Functions (Bot)](#ENetClient-Functions)
 
 ## Basic Functions
+* [GetBots](#GetBots)
+* [GetSelectedBots](#GetSelectedBots)
+* [GetBot](#GetBot)
 
-## Bot Functions
+### GetBots
+
+### GetSelectedBots
+
+### GetBot
+
+## ENetClient Functions
