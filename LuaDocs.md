@@ -1,7 +1,7 @@
 # Corea Documentation
 * [Structs](#structs)
 * [Functions](#functions)
-* [Hooks](#hooks)
+* [Callbacks](#callbacks)
 
 ## Structs
 * [Vector2](#vector2)
@@ -62,7 +62,7 @@
 | Number | `netid` | Player's netID |
 | Number | `userid` | Player's userID |
 | Bool | `facing_left` | Is player facing left |
-| [Clothes](#Clothes) | `clothes` | Player's tile position |
+| [Clothes](#Clothes) | `clothes` | Player's clothes |
 
 | Returns | Function | Description |
 |:-----|:----:|:-----------|
