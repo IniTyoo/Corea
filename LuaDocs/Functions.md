@@ -96,7 +96,6 @@ Removes a bot with that name from the bot list
 * [Connect](#Connect)()
 * [Disconnect](#Disconnect)()
 * [Say](#Say)(string message)
-* [GetPing](#GetPing)()
 * [Move](#Move)(int direction [, ...])
 * [Enter](#Enter)()
 * [FindPath](#FindPath)(int tile_x, int tile_y [, int delay])
@@ -140,11 +139,6 @@ Example:
 -- Check the bot's gem amount
 bot:Say("I have %d gems", bot.gems)
 ```
-
-## GetPing
-`ENetClient:GetPing()`
-
-Returns bot's ping (ms)
 
 ## Move
 `ENetClient:Move(int direction [, ...])`
