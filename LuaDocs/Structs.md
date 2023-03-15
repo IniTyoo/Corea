@@ -25,7 +25,7 @@
 | String | `name` | World name |
 | Number | `width` | World width |
 | Number | `height` | World height |
-| Number | `signal` | [GeigerSignal](#GeigerSignal) |
+| Number | `signal` | [GeigerSignal](Defines.md#GeigerSignal) |
 | Bool | `locked` | Is world locked |
 | Number | `owner` | World owner's userID |
 | Table&lt;Number> | `admins` | World admin's userIDs |
