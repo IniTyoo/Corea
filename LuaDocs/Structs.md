@@ -28,7 +28,7 @@
 | Number | `signal` | [GeigerSignal](#GeigerSignal) |
 | Bool | `locked` | Is world locked |
 | Number | `owner` | World owner's userID |
-| Table&lt;Number>> | `admins` | World admin's userIDs |
+| Table&lt;Number> | `admins` | World admin's userIDs |
 
 | Returns | Function | Description |
 |:-----|:----:|:-----------|
