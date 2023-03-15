@@ -6,6 +6,7 @@
 
 ## [Structs](Structs.md)
 * [Vector2](Structs.md#vector2)
+* [World](Structs.md#World)
 * [Clothes](Structs.md#Clothes)
 * [NetAvatar](Structs.md#netavatar)
 * [WorldObject](Structs.md#worldobject)
