@@ -1,7 +1,7 @@
 # Corea's Lua script Documentation
 
 ## [Defines](Defines.md) <sup><sub>(Global variables)</sup></sub>
-* [Direections](Defines.md#Directions)
+* [Directions](Defines.md#Directions)
 * [CallbackTypes](Defines.md#CallbackTypes)
 
 ## [Structs](Structs.md)
