@@ -25,17 +25,18 @@
 | String | `name` | World name |
 | Number | `width` | World width |
 | Number | `height` | World height |
-| Number | `geiger` | World gegier |
+| Number | `signal` | [GeigerSignal](#GeigerSignal) |
 | Bool | `locked` | Is world locked |
-| Number | `ownerid` | World owner's userID |
+| Number | `owner` | World owner's userID |
+| Table Number | `admins` | World owner's userID |
 
 | Returns | Function | Description |
 |:-----|:----:|:-----------|
-| Table [NetAvatar](#NetAvatar) | `GetPlayers()` | Get all players |
-| Table WorldGhost | `GetGhost()` | Get all ghosts |
-| Table [WorldTile](#WorldTile) | `GetTiles()` | Get all tiles |
+| Table<[NetAvatar](#NetAvatar)> | `GetPlayers()` | Get all players |
+| Table<WorldGhost> | `GetGhost()` | Get all ghosts |
+| Table<[WorldTile](#WorldTile)> | `GetTiles()` | Get all tiles |
 | [WorldTile](#WorldTile) | `GetTile(int tile_x, int tile_y)` | Get tile |
-| Table [WorldObject](#WorldObject) | `GetObjects()` | Get all floating items (objects) |
+| Table<[WorldObject](#WorldObject)> | `GetObjects()` | Get all floating items (objects) |
 
 ## Clothes
 | Type | Name | Description |
