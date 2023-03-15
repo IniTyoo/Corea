@@ -27,6 +27,7 @@
 | Number | `height` | World height |
 | Number | `signal` | [GeigerSignal](Defines.md#GeigerSignal) |
 | Bool | `locked` | Is world locked |
+| Bool | `jammed` | Is world jammed |
 | Number | `owner` | World owner's userID |
 | Table&lt;Number> | `admins` | World admin's userIDs |
 
@@ -70,7 +71,7 @@
 | String | `world` | Bot's world name |
 | Bool | `facing_left` | Is bot facing left |
 | [Clothes](#Clothes) | `clothes` | Bot's clothes |
-
+| [Inventory](#Inventory) | `inventory` | Bot's inventory data |
 
 ## NetAvatar
 | Type | Name | Description |
@@ -83,6 +84,8 @@
 | Number | `userid` | Player's userID |
 | Bool | `facing_left` | Is player facing left |
 | [Clothes](#Clothes) | `clothes` | Player's clothes |
+| Bool | `admin` | Is player world admin |
+| Bool | `owner` | Is player world owner |
 
 | Returns | Function | Description |
 |:-----|:----:|:-----------|
@@ -109,6 +112,8 @@
 | Number | `flags` | Tile's flags |
 | Bool | `ready` | Is ready to harvest tree |
 | Bool | `solid` | Is can pass the tile |
+| Bool | `water` | Is water on the tile |
+| Bool | `fire` | Is fire on the tile |
  
 ## InventoryItem
 | Type | Name | Description |
@@ -116,17 +121,15 @@
 | Number | `id` | Item's ID |
 | Number | `amount` | Item amount |
 | Bool | `wearing` | Is item wearing |
+| Bool | `wearable` | Is item can be worn |
 
 ## Inventory
 | Type | Name | Description |
 |:-----|:----:|:-----------|
-| Number | `size` | Inventory size |
-| Number | `space` | Inventory free space |
-| Table [InventoryItem](#InventoryItem) | `items` | Inventory items |
-
-| Returns | Function | Description |
-|:-----|:----:|:-----------|
-| Number | `GetItemAmount(int item_id)` | Get item amount from inventory items |
+| Number | `size` | Inventory size of slots |
+| Number | `space` | Inventory empty slots |
+| Number | `use` | Inventory using slots |
+| Table<[InventoryItem](#InventoryItem)> | `items` | Inventory items |
 
 ## GamePacket
 | Type | Name | Description |
