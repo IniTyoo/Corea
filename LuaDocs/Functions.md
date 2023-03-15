@@ -95,7 +95,7 @@ Removes a bot with that name from the bot list
 ## ENetClient Functions
 * [Connect](#Connect)()
 * [Disconnect](#Disconnect)()
-* [Say](#Say)(string pattern [, ...])
+* [Say](#Say)(string message)
 * [GetPing](#GetPing)()
 * [Move](#Move)(int direction [, ...])
 * [Enter](#Enter)()
@@ -131,7 +131,7 @@ Connect the bot. (Reconnect if already connected)
 Disconnect the bot
 
 ## Say
-`ENetClient:Say(string pattern [, ...])`
+`ENetClient:Say(string message)`
 
 The bot sends a packet to send a chat.
 
