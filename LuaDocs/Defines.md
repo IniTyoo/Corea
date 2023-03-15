@@ -3,6 +3,7 @@
 # Defines
 * [Directions](#Directions)
 * [CallbackTypes](#CallbackTypes)
+* [GeigerSignal](#GeigerSignal)
 
 ## Directions
 | Type | Variable | Value |
@@ -23,3 +24,11 @@
 |Number|`TRACKPACKET`||
 
 * [ENetClient:AddCallback](Functions.md#AddCallback)(string callback_name, `int callback_type`, void* function)
+
+## GeigerSignal
+| Type | Variable | Value |
+|:-----|:---------|:-----:|
+|Number|`SIGNAL_NONE`|0|
+|Number|`SIGNAL_RED`|1|
+|Number|`SIGNAL_YELLOW`|2|
+|Number|`SIGNAL_GREEN`|3|
