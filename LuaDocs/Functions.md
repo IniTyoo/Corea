@@ -105,6 +105,7 @@ Removes a bot with that name from the bot list
 * [Place](#Place)(int tile_x, int tile_y, int item_id [, bool animation])
 * [Wrench](#Wrench)(int tile_x, int tile_y)
 * [Use](#Use)()
+* [Respawn](#Respawn)()
 * [Wear](#Wear)(int item_id)
 * [SendPacket](#SendPacket)(int type, string packet)
 * [SendPacktRaw](#SendPacktRaw)(GamePacket packet)
@@ -115,9 +116,14 @@ Removes a bot with that name from the bot list
 * [RemoveCallback](#RemoveCallback)(string callback_name)
 * [RemoveCallbacks](#RemoveCallbacks)()
 * [GetWorld](#GetWorld)()
-* [GetInventory](#GetInventory)()
-* PasswordReply(string password [, int tile_x, int tile_y])
-* Respawn()
+* [GetItems](#GetItems)()
+* [GetObjects](#GetObjects)()
+* [GetTiles](#GetTiles)()
+* [GetTile](#GetTile)()
+* [GetPlayers](#GetPlayers)()
+* [GetGhost](#GetGhost)()
+* [FindPlayer](#FindPlayer)()
+* [PasswordReply](#PasswordReply)(string password [, int tile_x, int tile_y])
 
 ## Connect
 `ENetClient:Connect()`
@@ -249,14 +255,6 @@ end
 
 ## RemoveCallbacks
 `ENetClient:RemoveCallbacks()`
-
-## World Functions
-* GetObjects
-* GetTiles
-* GetTile
-* GetPlayers
-* GetGhost
-* FindPlayer
 
 ## NetAvatar Functions
 * Kick
