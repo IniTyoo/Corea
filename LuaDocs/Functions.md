@@ -97,7 +97,7 @@ Removes a bot with that name from the bot list
 * [Disconnect](#Disconnect)()
 * [Say](#Say)(string message)
 * [Move](#Move)(int direction [, ...])
-* [Enter](#Enter)()
+* [Enter](#Enter "Enter the door at the bot's tile position.")()
 * [FindPath](#FindPath)(int tile_x, int tile_y [, int delay])
 * [Warp](#Warp)(string world_name [, string door_id])
 * [Collect](#Collect)(int radius)
