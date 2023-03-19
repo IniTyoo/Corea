@@ -18,10 +18,10 @@
 ## CallbackTypes
 | Type | Variable | Value |
 |:-----|:---------|:-----:|
-|Number|`VARIANTLIST`||
-|Number|`GAMEMESSAGE`||
-|Number|`GAMEPACKET`||
-|Number|`TRACKPACKET`||
+|Number|`VARIANTLIST`|0|
+|Number|`GAMEMESSAGE`|1|
+|Number|`GAMEPACKET`|2|
+|Number|`TRACKPACKET`|3|
 
 * [ENetClient:AddCallback](Functions.md#AddCallback)(string callback_name, `int callback_type`, void* function)
 
