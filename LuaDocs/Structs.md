@@ -120,8 +120,8 @@
 |:-----|:----:|:-----------|
 | Number | `id` | Item's ID |
 | Number | `amount` | Item amount |
-| Bool | `wearing` | Is item wearing | If you fail to read items.dat, this value is returned to false forever.
-| Bool | `wearable` | Is item can be worn | 
+| Bool | `wearing` | Is item wearing ([ItemInfo](#ItemInfo)) |
+| Bool | `wearable` | Is item can be worn ([ItemInfo](#ItemInfo)) | 
 
 ## Inventory
 | Type | Name | Description |
