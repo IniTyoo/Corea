@@ -164,6 +164,7 @@
 | Any | `[5]` | Param 5 |
 
 ## ItemInfo
+If the program fails to read items.dat, the functions of the variables associated with this may not work.
 | Type | Name | Description |
 |:-----|:----:|:-----------|
 | String | `name` | Item name |
