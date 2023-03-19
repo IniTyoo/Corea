@@ -9,6 +9,7 @@
 * [WorldObject](#worldobject)
 * [WorldTile](#WorldTile)
 * [InventoryItem](#inventoryitem)
+* [Inventory](#inventory)
 * [GamePacket](#gamepacket)
 * [VariantList](#variantlist)
 * [ItemInfo](#iteminfo)
