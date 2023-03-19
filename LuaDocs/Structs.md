@@ -120,8 +120,8 @@
 |:-----|:----:|:-----------|
 | Number | `id` | Item's ID |
 | Number | `amount` | Item amount |
-| Bool | `wearing` | Is item wearing | [?]("If you fail to read items.dat, this value is returned to false forever.")
-| Bool | `wearable` | Is item can be worn | [?]("If you fail to read items.dat, this value is returned to false forever.")
+| Bool | `wearing` | Is item wearing | [wwww?]("If you fail to read items.dat, this value is returned to false forever.")
+| Bool | `wearable` | Is item can be worn | [wwww?]("If you fail to read items.dat, this value is returned to false forever.")
 
 ## Inventory
 | Type | Name | Description |
