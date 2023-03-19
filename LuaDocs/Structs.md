@@ -164,11 +164,15 @@
 | Any | `[5]` | Param 5 |
 
 ## ItemInfo
-If the program fails to read items.dat, the functions of the variables associated with this may not work.
+※ If the program fails to read items.dat, the functions of the variables associated with this may not work.
 | Type | Name | Description |
 |:-----|:----:|:-----------|
-| String | `name` | Item name |
-| Number | `id` | Item ID |
-| Number | `rarity` | Item rarity |
-| Number | `growtime` | Item growtime |
-| Number | `breakhits` | Item breakhits |
+| String | `name` | Item's name |
+| Number | `id` | Item's ID |
+| Number | `rarity` | Item's rarity |
+| Number | `growTime` | Item's growTime |
+| Number | `breakHits` | Item's breakHits |
+| Number | `collisionType` | Item's collisionType |
+| Number | `clothingType` | Item's clothingType |
+| Number | `itemCategory` | Item's itemCategory |
+| Number | `itemProps2` | Item's itemProps2 |
