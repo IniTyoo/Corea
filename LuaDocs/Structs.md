@@ -120,7 +120,7 @@
 |:-----|:----:|:-----------|
 | Number | `id` | Item's ID |
 | Number | `amount` | Item amount |
-| Bool | `wearing` | Is item wearing ([ItemInfo](#ItemInfo)) |
+| Bool | `wearing` | Is item wearing |
 | Bool | `wearable` | Is item can be worn ([ItemInfo](#ItemInfo)) | 
 
 ## Inventory
