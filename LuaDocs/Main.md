@@ -3,6 +3,7 @@
 ## [Defines](Defines.md) <sup><sub>(Global variables)</sup></sub>
 * [Directions](Defines.md#Directions)
 * [CallbackTypes](Defines.md#CallbackTypes)
+* [GeigerSignal](Defines.md#GeigerSignal
 
 ## [Structs](Structs.md)
 * [Vector2](Structs.md#vector2)
