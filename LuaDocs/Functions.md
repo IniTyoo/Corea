@@ -17,7 +17,7 @@
 * StopFile(string filename)
 * RunThread(string thread_name, void* function [, ...])
 * GetItemInfo(int item_id)
-* [RTVAR](#RTVAR)RTVAR(string key)
+* [RTVAR](#RTVAR)(string key)
 * HttpGet(string url)
 * RequireFromUrl(string url)
 * GetTileDistance(int x1, int y1, int x2, int y2)
@@ -186,9 +186,14 @@ print(success and "success!" or "failed!")
 Make the bot warp to the world.
 
 ## Collect
-`ENetClient:Collect(int radius [, bool force coollect])`
+`ENetClient:Collect(int radius [, bool force collect])`
 
 Collect items within range.
+
+## CollectSet
+`ENetClient:CollectSet(bool collect, int radius [, int delay, bool force]s)`
+
+Auto Collect items within range.
 
 ## Punch
 `ENetClient:Punch(int tile_x, int tile_y [, bool animation])`
