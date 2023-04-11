@@ -17,6 +17,7 @@
 * StopFile(string filename)
 * RunThread(string thread_name, void* function [, ...])
 * GetItemInfo(int item_id)
+* [RTVAR](#RTVAR)RTVAR(string key)
 * HttpGet(string url)
 * RequireFromUrl(string url)
 * GetTileDistance(int x1, int y1, int x2, int y2)
@@ -262,3 +263,26 @@ end
 * Ban
 * Trade
 * SendMsg
+
+
+
+## RTVAR
+`RTVAR(string key)`
+
+return the [RTVAR Functions](#RTVAR-Functions) as a table.
+
+Example:
+```lua
+-- Parse String to RTVAR
+rtvar = RTVAR([[
+name|indragoreng
+mstate|2
+]])
+print(rtvar:GetParam("name"))
+```
+
+## RTVAR Functions
+* [GetParam](#GetParam)(string key)
+* [GetIntParam](#GetIntParam)(string key)
+* [GetLongParam](#GetLongParam)(string key)
+* [FindKey](#FindKey)(string key)
