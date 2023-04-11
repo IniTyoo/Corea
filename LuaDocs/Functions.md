@@ -102,6 +102,7 @@ Removes a bot with that name from the bot list
 * [FindPath](#FindPath)(int tile_x, int tile_y [, int delay])
 * [Warp](#Warp)(string world_name [, string door_id])
 * [Collect](#Collect)(int radius [, bool force collect])
+* [CollectSet](#CollectSet)(bool collect, int radius [, int delay, bool force])
 * [Punch](#Punch)(int tile_x, int tile_y [, bool animation])
 * [Place](#Place)(int tile_x, int tile_y, int item_id [, bool animation])
 * [Wrench](#Wrench)(int tile_x, int tile_y)
