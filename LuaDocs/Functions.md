@@ -101,7 +101,7 @@ Removes a bot with that name from the bot list
 * [Enter](#Enter "Enter the door at the bot's tile position.")()
 * [FindPath](#FindPath)(int tile_x, int tile_y [, int delay])
 * [Warp](#Warp)(string world_name [, string door_id])
-* [Collect](#Collect)(int radius)
+* [Collect](#Collect)(int radius [, bool force collect])
 * [Punch](#Punch)(int tile_x, int tile_y [, bool animation])
 * [Place](#Place)(int tile_x, int tile_y, int item_id [, bool animation])
 * [Wrench](#Wrench)(int tile_x, int tile_y)
@@ -185,7 +185,7 @@ print(success and "success!" or "failed!")
 Make the bot warp to the world.
 
 ## Collect
-`ENetClient:Collect(int radius [, table whitelist_item_ids])`
+`ENetClient:Collect(int radius [, bool force coollect])`
 
 Collect items within range.
 
