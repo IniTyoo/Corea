@@ -8,6 +8,7 @@
 * [NetAvatar](#netavatar) (Player)
 * [WorldObject](#worldobject)
 * [WorldTile](#WorldTile)
+* [WorldGhost](#WorldGhost)
 * [InventoryItem](#inventoryitem)
 * [Inventory](#inventory)
 * [GamePacket](#gamepacket)
@@ -35,7 +36,7 @@
 | Returns | Function | Description |
 |:-----|:----:|:-----------|
 | Table<[NetAvatar](#NetAvatar)> | `GetPlayers()` | Get all players |
-| Table<WorldGhost> | `GetGhost()` | Get all ghosts |
+| Table<[WorldGhost](#WorldGhost)> | `GetGhost()` | Get all ghosts |
 | Table<[WorldTile](#WorldTile)> | `GetTiles()` | Get all tiles |
 | [WorldTile](#WorldTile) | `GetTile(int tile_x, int tile_y)` | Get tile |
 | Table<[WorldObject](#WorldObject)> | `GetObjects()` | Get all floating items (objects) |
@@ -115,6 +116,14 @@
 | Bool | `solid` | Is can pass the tile |
 | Bool | `water` | Is water on the tile |
 | Bool | `fire` | Is fire on the tile |
+
+## WorldGhost
+| Type | Name | Description |
+|:-----|:----:|:-----------|
+| Number | `ghostype` | Ghost type |
+| [Vector2](#vector2) | `pos` | Ghost curent position |
+| [Vector2](#vector2) | `target` | Ghost target position |
+| Number | `velocity` | Ghost velocity |
  
 ## InventoryItem
 | Type | Name | Description |

@@ -32,3 +32,13 @@
 |Number|`SIGNAL_RED`|1|
 |Number|`SIGNAL_YELLOW`|2|
 |Number|`SIGNAL_GREEN`|3|
+
+
+## MessageBoxType
+| Type | Variable | Value |
+|:-----|:---------|:-----:|
+|Number|`MessageBoxType_None`|0|
+|Number|`MessageBoxType_Success`|1|
+|Number|`MessageBoxType_Warning`|2|
+|Number|`MessageBoxType_Error`|3|
+|Number|`MessageBoxType_Info`|4|
