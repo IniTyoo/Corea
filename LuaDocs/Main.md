@@ -4,6 +4,7 @@
 * [Directions](Defines.md#Directions)
 * [CallbackTypes](Defines.md#CallbackTypes)
 * [GeigerSignal](Defines.md#GeigerSignal)
+* [MessageBoxType](Defines.md#MessageBoxType)
 
 ## [Structs](Structs.md)
 * [Vector2](Structs.md#vector2)

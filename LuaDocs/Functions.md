@@ -117,6 +117,14 @@ RunThread("ga tau", bot1, function(bot) print(bot.name)
 end)
 ```
 
+## ~~StopThread~~
+`StopThread(string thread_name)`
+
+Stopa thread with a name
+```lua
+StopThread("ga tau")
+```
+
 ## GetItemInfo
 `GetItemInfo(int item_id)`
 
