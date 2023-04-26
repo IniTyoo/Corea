@@ -107,7 +107,7 @@ Terminate a script from file
 StopFile("stealeromg.lua")
 ```
 
-## RunThread
+## RunThread ( BUG )
 `RunThread(string thread_name, ENetClient, void* function)`
 
 Create and run a thread with a name, a bot object and a function
@@ -374,7 +374,7 @@ Example:
 bot:SendPacket(3, "action|join_request\nname|INDONESIA\ninvitedWorld|0")
 ```
 
-## SendPacketRaw
+## SendPacketRaw  ( BUG )
 `ENetClient:SendPacketRaw(GamePacket packet)`
 
 Sends GamePacket to server.
